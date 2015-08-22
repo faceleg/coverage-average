@@ -12,6 +12,10 @@ Lines        : 94.44% ( 51/54 )
 ================================================================================
 ```
 
+# Why
+
+Use it in your CI builds to force a failure if test coverage falls below your desired percentage.
+
 ## Usage
 
 Output average:
