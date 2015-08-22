@@ -1,6 +1,6 @@
 {
   "name": "coverage-average",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compute the average coverage from istanbul text-summary.txt files, exit 1 if below threshold",
   "main": "index.js",
   "preferGlobal": "true",
