@@ -1,4 +1,5 @@
 # coverage-average
+[![Code Climate](https://codeclimate.com/github/faceleg/coverage-average/badges/gpa.svg)](https://codeclimate.com/github/faceleg/coverage-average)
 
 Computes the average coverage from a text-summary file like:
 
