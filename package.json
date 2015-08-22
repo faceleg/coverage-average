@@ -1,0 +1,29 @@
+{
+  "name": "coverage-average",
+  "version": "1.0.0",
+  "description": "Compute the average coverage from istanbul text-summary.txt files, exit 1 if below threshold",
+  "main": "index.js",
+  "preferGlobal": "true",
+  "bin": {
+    "coverage-average": "./index.js"
+  },
+  "engines": {
+    "node": "~0.12"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test",
+    "test-watch": "node_modules/.bin/mocha test -w"
+  },
+  "author": "Michael Robinson <mike@pagesofinterest.net>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "colors": "^1.1.2",
+    "ramda": "^0.17.1"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "child-process-promise": "^1.1.0",
+    "mocha": "^2.2.5"
+  }
+}
