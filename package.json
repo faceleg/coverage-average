@@ -19,6 +19,7 @@
   "dependencies": {
     "bluebird": "^2.9.34",
     "colors": "^1.1.2",
+    "commander": "^2.8.1",
     "ramda": "^0.17.1"
   },
   "devDependencies": {
