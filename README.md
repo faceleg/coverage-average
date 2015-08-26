@@ -38,3 +38,48 @@ FAIL Coverage average of 93.50% is below limit of 95.00%
 $ coverage-average path/to/text-summary.txt --limit 90
 PASS Coverage average of 93.50% is above limit of 95.00%
 ```
+
+## Example
+
+To have this module calculate the average coverage based on karma-coverage generated results, use a karma.conf.js file similar to:
+
+```JavaScript
+module.exports = function(config) {
+  config.set({
+    frameworks: ['jasmine'],
+    files: [
+      'bower_components/angular/angular.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'src/**/*.js,
+      'test/unit/**/*.js'
+    ],
+    browsers: ['PhantomJS'],
+    reporters: ['dots', 'coverage'],
+    preprocessors: {
+      'src/**/*.js': ['coverage']
+    },
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-coverage',
+      'karma-jasmine'
+    ],
+    coverageReporter: {
+      reporters: [{
+        type: 'text-summary',
+        subdir: '.',
+        file: 'text-summary.txt'
+      }]
+    }
+  });
+};
+```
+
+The summary file will be located at `coverage/text-summary/text-summary.txt`.
+
+Calculate the average with:
+
+```BAsh
+$ coverage-average coverage/text-summary/text-summary.txt` --limit 95
+```
+
+See [sn-sticky-table-header](https://github.com/solnetdigital/sn-sticky-table-header) for a working example.
