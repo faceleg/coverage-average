@@ -8,7 +8,7 @@
     "coverage-average": "./index.js"
   },
   "engines": {
-    "node": "~0.12"
+    "node": ">=0.12"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha test",
